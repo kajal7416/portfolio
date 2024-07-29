@@ -1,0 +1,226 @@
+.herosection{
+    height: 100%;
+    width: 100%;
+    color: hsl(204, 23.8%, 95.9%);
+    position: fixed; 
+}
+/* content */
+.content{
+    color: white;
+    margin: 200px auto;
+    display: flex;
+  }
+  .intro h2{
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .port{
+    font-size: 30px;
+  }
+  .port span{
+    color: #ff3f81;
+  }
+  .name{
+    /* color: red; */
+    color: #ff3f81;
+    /* color: #663dff; */
+    font-weight: 800;
+    font-size: 60px;
+    }
+  .intro {
+    text-align: left;
+    margin: 0 50px;
+
+}
+
+/* text animation */
+
+
+.bounce-text {
+  animation: bounce 2s infinite;
+  letter-spacing: 4px;
+  padding: 20px 0;
+  font-size: 12px;
+
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+
+.typing-effect {
+  width: 40px;
+  overflow: hidden;
+  font-weight: 800;
+  letter-spacing: 4px;
+  /* border-right: .15em solid orange; */
+  white-space: nowrap;
+  animation: typing 4s steps(15) 2s infinite alternate;
+  padding: 10px 0;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 58%; }
+}
+
+  
+  .intro p{
+    font-size: 20px;
+    width: 50%;
+    margin: 20px 0;
+  }
+  
+  /*  */
+  .button-flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: auto;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin: 0;
+  }
+  
+  .btn {
+    background-color: #ff3f81 !important;
+    border: none;
+    z-index: 1;
+  }
+  .btn:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    color: #ff3f81;
+  }
+  .btn:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn:active {
+    top: 2px;
+  }
+
+  /* btn1 */
+  .btn1 {
+    background: white !important;
+    border: none;
+    z-index: 1;
+    color: #ff3f81 !important;
+  }
+  .btn1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ff3f81 !important;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    
+  }
+  .btn1:hover {
+    color: white !important;
+  }
+  .btn1:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn1:active {
+    top: 2px;
+  }
+
+  /* media query */
+  @media only screen and (min-width: 280px) and (max-width: 576px){
+    
+    .intro{
+      margin: 0 0;
+      width: 100%;
+    }
+    .name{
+      font-size: 40px !important;
+    }
+    .intro h2{
+      font-size: 20px;
+    }
+    .intro p{
+      text-align: justify;
+      width: auto;
+      font-size: 18px;
+    }
+    .workbtn1{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 577px) and (max-width: 767px){
+    .typing-effect{
+      width: 100%;
+    }
+    .intro p{
+      width: 100%;
+    }
+    button{
+      margin: 0 !important;
+    }
+    .vanta-canvas{
+      width: 100%;
+    }
+    /* content */
+    .content{
+      margin: 150px 0;
+    }
+    /* .intro */
+    .intro{
+      margin: 0 20px !important;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1200px){
+    .intro{
+      margin: 0;
+    } 
+ 
+ }
+  
