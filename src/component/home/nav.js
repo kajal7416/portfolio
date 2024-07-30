@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import './nav.css';
 import '../home/assest/nav.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import { Link } from 'react-router-dom';
-// import React, { useEffect } from 'react';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 
