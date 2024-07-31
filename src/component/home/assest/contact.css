@@ -55,7 +55,7 @@
 
 .emailid p {
   font-size: 25px;
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Cedarville Cursive";
   font-style: italic;
 
 }
@@ -66,7 +66,7 @@
 }
 
 .number p {
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Cedarville Cursive";
   letter-spacing: 4px;
   font-size: 25px;
   text-align: left;
